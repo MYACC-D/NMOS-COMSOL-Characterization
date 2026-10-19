@@ -42,19 +42,19 @@ The results were exported from COMSOL into two CSV files:
 
 | File | Description |
 |---|---|
-| `nmos_transfer.csv` | Transfer characteristics: (I<sub>D</sub>) versus (V<sub>GS</sub>) |
-| `nmos_output.csv` | Output characteristics: (I<sub>D</sub>) versus (V<sub>DS</sub>) for multiple gate voltages |
+| nmos_transfer.csv | Transfer characteristics: (I<sub>D</sub>) versus (V<sub>GS</sub>) |
+| nmos_output.csv | Output characteristics: (I<sub>D</sub>) versus (V<sub>DS</sub>) for multiple gate voltages |
 
 Python: Analyze the exported transfer data, calculate transconductance, and estimate threshold voltage.
 
 ### 3. Python-Based Data Analysis
 
-The exported CSV files were processed in Google Colab using Pandas, NumPy, and Matplotlib.
+The exported CSV file was processed in Google Colab using Pandas, NumPy, and Matplotlib.
 
 The analysis includes:
 
 - Importing and extracting the relevant simulation data.
-- Plotting transfer and output characteristics.
+- Plotting transfer characteristic and transconductance.
 - Numerically differentiating the transfer curve to calculate transconductance.
 - Applying polynomial curve fitting to estimate the threshold voltage.
 
@@ -92,9 +92,9 @@ The transfer and output curves are used to examine the device's turn-on behavior
 ## How to Run
 
 1. Open the Python notebook in Google Colab.
-2. Upload `nmos_transfer.csv` and `nmos_output.csv`.
+2. Upload nmos_transfer.csv.
 3. Run the notebook cells in sequence.
-4. Review the transfer and output characteristic plots.
+4. Review the transfer characteristic and transconductance plots.
 5. Examine the calculated transconductance and estimated threshold voltage.
 
 The COMSOL model is required to reproduce the original simulation data. The Python analysis can be run separately using the exported CSV files.
