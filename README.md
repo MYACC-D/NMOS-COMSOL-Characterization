@@ -62,15 +62,11 @@ The analysis includes:
 
 Transconductance measures how strongly the drain current responds to a change in gate-to-source voltage at a fixed drain-to-source voltage.
 
-\[
-g<sub>m</sub>=\frac{\partial (I<sub>D</sub>)}{\partial (V<sub>DS</sub>)}
-\]
+g<sub>m</sub> = ∂I<sub>D</sub> / ∂V<sub>GS</sub>
 
 The derivative was approximated numerically using NumPy:
 
-\[
-g<sub>m</sub>\approx\frac{\Delta (I<sub>D</sub>)}{\Delta (V<sub>DS</sub>)}
-\]
+g<sub>m</sub> ≈ ΔI<sub>D</sub> / ΔV<sub>GS</sub>
 
 The resulting transconductance values are expressed in microsiemens (\(\mu\text{S}\)).
 
