@@ -1,8 +1,8 @@
-# DC Characterization of an NMOS Transistor Using COMSOL Multiphysics 6.4 (Using Trail License) and Python
+# DC Characterization of an NMOS Transistor Using COMSOL Multiphysics 6.4 and Python
 
 ## Overview
 
-This project investigates the DC characteristics of an N-channel Metal-Oxide-Semiconductor Field-Effect Transistor (NMOS) using **COMSOL Multiphysics 6.4** and **Python**.
+This project investigates the DC characteristics of an N-channel Metal-Oxide-Semiconductor Field-Effect Transistor (NMOS) using **COMSOL Multiphysics 6.4 (Using Trail License)** and **Python**.
 
 The NMOS device was modeled in COMSOL following the official COMSOL Semiconductor Module example, [DC Characteristics of a MOS Transistor (MOSFET)](https://doc.comsol.com/6.4/doc/com.comsol.help.models.semicond.mosfet/mosfet.html).
 
