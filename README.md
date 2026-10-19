@@ -45,7 +45,7 @@ The results were exported from COMSOL into two CSV files:
 | `nmos_transfer.csv` | Transfer characteristics: (I<sub>D</sub>) versus (V<sub>GS</sub>) |
 | `nmos_output.csv` | Output characteristics: (I<sub>D</sub>) versus (V<sub>DS</sub>) for multiple gate voltages |
 
-These files serve as the input data for the Python analysis.
+Python: Analyze the exported transfer data, calculate transconductance, and estimate threshold voltage.
 
 ### 3. Python-Based Data Analysis
 
