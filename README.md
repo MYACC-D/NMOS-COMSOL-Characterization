@@ -1,4 +1,4 @@
-# DC Characterization of an NMOS Transistor Using COMSOL Multiphysics 6.4 and Python
+# DC Characterization of an NMOS Transistor Using COMSOL Multiphysics 6.4 (Using Trail License) and Python
 
 ## Overview
 
