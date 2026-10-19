@@ -12,8 +12,8 @@ The simulated electrical characteristics were exported as CSV files and analyzed
 
 - Simulate an NMOS transistor using COMSOL Multiphysics 6.4.
 - Analyze the transfer and output characteristics of the device.
-- Calculate transconductance (\(g_m\)) from the transfer characteristics.
-- Estimate the threshold voltage (\(V_{th}\)) using Python.
+- Calculate transconductance (g<sub>m</sub>) from the transfer characteristics.
+- Estimate the threshold voltage (V<sub>th</sub>) using Python.
 - Develop a workflow connecting semiconductor device simulation with numerical data analysis.
 
 ## Tools and Technologies
@@ -33,8 +33,8 @@ The NMOS transistor was modeled using COMSOL's Semiconductor physics interface, 
 
 Two DC analyses were considered:
 
-- **Transfer characteristics:** Drain current (\(I_D\)) versus gate-to-source voltage (\(V_{GS}\)), with drain-to-source voltage fixed at (V<sub>DS</sub> = 0.01 V).
-- **Output characteristics:** Drain current (\(I_D\)) versus drain-to-source voltage (\(V_{DS}\)) for gate voltages of 2 V, 3 V, and 4 V.
+- **Transfer characteristics:** Drain current (I<sub>D</sub>) versus gate-to-source voltage (V<sub>GS</sub>), with drain-to-source voltage fixed at (V<sub>DS</sub> = 0.01 V).
+- **Output characteristics:** Drain current (I<sub>D</sub>) versus drain-to-source voltage (V<sub>DS</sub>) for gate voltages of 2 V, 3 V, and 4 V.
 
 ### 2. Simulation Data Export
 
@@ -42,8 +42,8 @@ The results were exported from COMSOL into two CSV files:
 
 | File | Description |
 |---|---|
-| `nmos_transfer.csv` | Transfer characteristics: \(I_D\) versus \(V_{GS}\) |
-| `nmos_output.csv` | Output characteristics: \(I_D\) versus \(V_{DS}\) for multiple gate voltages |
+| `nmos_transfer.csv` | Transfer characteristics: (I<sub>D</sub>) versus (V<sub>GS</sub>) |
+| `nmos_output.csv` | Output characteristics: (I<sub>D</sub>) versus (V<sub>DS</sub>) for multiple gate voltages |
 
 These files serve as the input data for the Python analysis.
 
@@ -63,13 +63,13 @@ The analysis includes:
 Transconductance measures how strongly the drain current responds to a change in gate-to-source voltage at a fixed drain-to-source voltage.
 
 \[
-g_m=\frac{\partial I_D}{\partial V_{GS}}
+g<sub>m</sub>=\frac{\partial (I<sub>D</sub>)}{\partial (V<sub>DS</sub>)}
 \]
 
 The derivative was approximated numerically using NumPy:
 
 \[
-g_m\approx\frac{\Delta I_D}{\Delta V_{GS}}
+g<sub>m</sub>\approx\frac{\Delta (I<sub>D</sub>)}{\Delta (V<sub>DS</sub>)}
 \]
 
 The resulting transconductance values are expressed in microsiemens (\(\mu\text{S}\)).
@@ -86,8 +86,8 @@ The Python analysis produced the following preliminary parameter estimates:
 
 | Parameter | Estimated result |
 |---|---:|
-| Transconductance, \(g_m\) | Approximately 9.35 µS |
-| Threshold voltage, \(V_{th}\) | Approximately 1.55 V |
+| Transconductance, (g<sub>m</sub>) | Approximately 9.35 µS |
+| Threshold voltage, (V<sub>th</sub>) | Approximately 1.55 V |
 
 These values are specific to the data processing and extraction methods used in this project. The threshold voltage should be interpreted in the context of the selected polynomial fitting procedure.
 
