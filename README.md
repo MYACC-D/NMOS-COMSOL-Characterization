@@ -68,7 +68,7 @@ The derivative was approximated numerically using NumPy:
 
 g<sub>m</sub> ≈ ΔI<sub>D</sub> / ΔV<sub>GS</sub>
 
-The resulting transconductance values are expressed in microsiemens (\(\mu\text{S}\)).
+The resulting transconductance values are expressed in microsiemens (µS).
 
 ### 5. Threshold Voltage Estimation
 
