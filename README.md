@@ -33,7 +33,7 @@ The NMOS transistor was modeled using COMSOL's Semiconductor physics interface, 
 
 Two DC analyses were considered:
 
-- **Transfer characteristics:** Drain current (\(I_D\)) versus gate-to-source voltage (\(V_{GS}\)), with drain-to-source voltage fixed at \(V_{DS}=0.01\text{ V}\).
+- **Transfer characteristics:** Drain current (\(I_D\)) versus gate-to-source voltage (\(V_{GS}\)), with drain-to-source voltage fixed at (V<sub>DS</sub> = 0.01 V).
 - **Output characteristics:** Drain current (\(I_D\)) versus drain-to-source voltage (\(V_{DS}\)) for gate voltages of 2 V, 3 V, and 4 V.
 
 ### 2. Simulation Data Export
